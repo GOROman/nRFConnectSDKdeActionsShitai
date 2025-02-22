@@ -71,8 +71,3 @@ jobs:
         run: |
           west build -b nrf52840dk_nrf52840
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: firmware
-          path: build/zephyr/*.hex
